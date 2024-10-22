@@ -3,7 +3,7 @@
     enable = pkgs.lib.mkDefault true;
     settings = {
       globalstatus = pkgs.lib.mkDefault true;
-      theme = pkgs.lib.mkDefault "kanagawa";
+      theme = pkgs.lib.mkDefault "vscode";
       disabledFiletypes.statusline = [
         "alpha"
       ];
