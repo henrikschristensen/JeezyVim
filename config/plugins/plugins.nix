@@ -56,5 +56,16 @@
       treesitterIntegration.enable = pkgs.lib.mkDefault true;
     };
     web-devicons.enable = true;
+    copilot-vim = {
+      enable = pkgs.lib.mkDefault true;
+    };
+    copilot-chat = {
+      enable = pkgs.lib.mkDefault true;
+      settings = {
+        window = {
+          layout = "float";
+        };
+      };
+    };
   };
 }

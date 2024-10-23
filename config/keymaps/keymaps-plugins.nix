@@ -195,5 +195,17 @@
         desc = "Toggle treeSJ";
       };
     }
+
+    # Copilot Chat
+    {
+      action = "<cmd>lua require('CopilotChat').open()<CR>";
+      key = ",cc";
+      mode = "n";
+      options = {
+        noremap = true;
+        silent = true;
+        desc = "Open Copilot Chat";
+      };
+    }
   ];
 }
