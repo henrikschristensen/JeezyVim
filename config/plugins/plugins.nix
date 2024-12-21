@@ -46,13 +46,13 @@
         lsp.autoAttach = pkgs.lib.mkDefault true;
       };
     };
-    nvim.enable = pkgs.lib.mkDefault true;
+    colorizer.enable = pkgs.lib.mkDefault true;
     marks.enable = pkgs.lib.mkDefault true;
     vim-matchup = {
-      enable = pkgs.lib.mkDefault true
+      enable = pkgs.lib.mkDefault true;
       treesitter.enable = pkgs.lib.mkDefault true;
-      settings.transmute_enabled = pkgs.lib.mkDefault true;
-      settings.surround_enabled = pkgs.lib.mkDefault true;     
+      settings.transmute_enabled = pkgs.lib.mkDefault 1;
+      settings.surround_enabled = pkgs.lib.mkDefault 1;     
     };
     web-devicons.enable = true;
     copilot-vim = {
