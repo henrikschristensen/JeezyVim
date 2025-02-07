@@ -74,7 +74,7 @@ in {
         choose_sln = nil,
      }
 
-    require('dap-cs').setup(
+    require("dap-cs").setup {
       -- Additional dap configurations can be added.
       -- dap_configurations accepts a list of tables where each entry
       -- represents a dap configuration. For more details do:
@@ -93,6 +93,6 @@ in {
         -- by default, this is the "netcoredbg" executable on your PATH.
         path = "netcoredbg"
       }
-    )
+    }
   '';
 }

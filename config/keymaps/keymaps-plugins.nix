@@ -207,5 +207,141 @@
         desc = "Open Copilot Chat";
       };
     }
+
+    # nvim-dap
+    {
+      action = "<cmd>lua require'dap'.continue()<CR>";
+      key = "<F5>";
+      mode = "n";
+      options = {
+        noremap = true;
+        silent = true;
+        desc = "DAP Continue";
+      };
+    }
+    {
+      action = "<cmd>lua require'dap'.step_over()<CR>";
+      key = "<F10>";
+      mode = "n";
+      options = {
+        noremap = true;
+        silent = true;
+        desc = "DAP Step Over";
+      };
+    }
+    {
+      action = "<cmd>lua require'dap'.step_into()<CR>";
+      key = "<F11>";
+      mode = "n";
+      options = {
+        noremap = true;
+        silent = true;
+        desc = "DAP Step Into";
+      };
+    }
+    {
+      action = "<cmd>lua require'dap'.step_out()<CR>";
+      key = "<F12>";
+      mode = "n";
+      options = {
+        noremap = true;
+        silent = true;
+        desc = "DAP Step Out";
+      };
+    }
+    {
+      action = "<cmd>lua require'dap'.toggle_breakpoint()<CR>";
+      key = "<F9>";
+      mode = "n";
+      options = {
+        noremap = true;
+        silent = true;
+        desc = "DAP Toggle Breakpoint";
+      };
+    }
+    {
+      action = "<cmd>lua require'dap'.repl.open()<CR>";
+      key = "<F8>";
+      mode = "n";
+      options = {
+        noremap = true;
+        silent = true;
+        desc = "DAP REPL Open";
+      };
+    }
+
+    # dap-ui
+    {
+      action = "<cmd>lua require'dapui'.toggle()<CR>";
+      key = "<F7>";
+      mode = "n";
+      options = {
+        noremap = true;
+        silent = true;
+        desc = "DAP UI Toggle";
+      };
+    }
+    {
+      action = "<cmd>lua require'dapui'.open()<CR>";
+      key = "<F6>";
+      mode = "n";
+      options = {
+        noremap = true;
+        silent = true;
+        desc = "DAP UI Open";
+      };
+    }
+    {
+      action = "<cmd>lua require'dapui'.close()<CR>";
+      key = "<F5>";
+      mode = "n";
+      options = {
+        noremap = true;
+        silent = true;
+        desc = "DAP UI Close";
+      };
+    }
+
+    # neotest
+    {
+      action = "<cmd>lua require'neotest'.run.run()<CR>";
+      key = "<leader>tr";
+      mode = "n";
+      options = {
+        noremap = true;
+        silent = true;
+        desc = "Run nearest test";
+      };
+    }
+    {
+      action = "<cmd>lua require'neotest'.run.run(vim.fn.expand('%'))<CR>";
+      key = "<leader>tf";
+      mode = "n";
+      options = {
+        noremap = true;
+        silent = true;
+        desc = "Run tests in file";
+      };
+    }
+    {
+      action = "<cmd>lua require'neotest'.run.run({strategy = 'dap'})<CR>";
+      key = "<leader>td";
+      mode = "n";
+      options = {
+        noremap = true;
+        silent = true;
+        desc = "Debug nearest test";
+      };
+    }
+    {
+      action = "<cmd>lua require'neotest'.summary.toggle()<CR>";
+      key = "<leader>ts";
+      mode = "n";
+      options = {
+        noremap = true;
+        silent = true;
+        desc = "Toggle test summary";
+      };
+    }
   ];
 }
