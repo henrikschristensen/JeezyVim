@@ -52,7 +52,7 @@
       enable = pkgs.lib.mkDefault true;
       treesitter.enable = pkgs.lib.mkDefault true;
       settings.transmute_enabled = pkgs.lib.mkDefault 1;
-      settings.surround_enabled = pkgs.lib.mkDefault 1;     
+      settings.surround_enabled = pkgs.lib.mkDefault 1;
     };
     web-devicons.enable = true;
     copilot-vim = {
@@ -64,6 +64,30 @@
         window = {
           layout = "float";
         };
+      };
+    };
+    dap = {
+      enable = pkgs.lib.mkDefault true;
+      settings = {};
+    };
+    dap-ui = {
+      enable = pkgs.lib.mkDefault true;
+      settings = {};
+    };
+    neotest = {
+      enable = pkgs.lib.mkDefault true;
+      adapters = {
+        dotnet = {
+          enable = pkgs.lib.mkDefault true;
+          settings = {};
+        };
+        go = {
+          enable = pkgs.lib.mkDefault true;
+          settings = {};
+        };
+      };
+      settings = {
+        summary.enable = pkgs.lib.mkDefault true;
       };
     };
   };
