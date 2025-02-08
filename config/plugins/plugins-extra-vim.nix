@@ -34,7 +34,7 @@ in {
       config = "lua require('treesj').setup({use_default_keymaps=false})";
     }
     (fromGitHub "85aca5d48ddf8ada4e010ee9fa4d43c77ebf68c9" "main" "seblj/roslyn.nvim")
-    (fromGitHub "16e5debe8cb7fb73c8799d20969ee00883586602" "main" "NicholasMata/nvim-dap-cs")
+   # (fromGitHub "16e5debe8cb7fb73c8799d20969ee00883586602" "main" "NicholasMata/nvim-dap-cs")
   ];
   extraConfigLua = ''
      require("roslyn").setup {
@@ -74,25 +74,25 @@ in {
         choose_sln = nil,
      }
 
-    require("dap-cs").setup {
-      -- Additional dap configurations can be added.
-      -- dap_configurations accepts a list of tables where each entry
-      -- represents a dap configuration. For more details do:
-      -- :help dap-configuration
-      dap_configurations = {
-        {
-          -- Must be "coreclr" or it will be ignored by the plugin
-          type = "coreclr",
-          name = "Attach remote",
-          mode = "remote",
-          request = "attach",
-        },
-      },
-      netcoredbg = {
-        -- the path to the executable netcoredbg which will be used for debugging.
-        -- by default, this is the "netcoredbg" executable on your PATH.
-        path = "netcoredbg"
-      }
-    }
+   -- require("dap-cs").setup {
+   --   -- Additional dap configurations can be added.
+   --   -- dap_configurations accepts a list of tables where each entry
+   --   -- represents a dap configuration. For more details do:
+   --   -- :help dap-configuration
+   --   dap_configurations = {
+   --     {
+   --       -- Must be "coreclr" or it will be ignored by the plugin
+   --       type = "coreclr",
+   --       name = "Attach remote",
+   --       mode = "remote",
+   --       request = "attach",
+   --     },
+   --   },
+   --   netcoredbg = {
+   --     -- the path to the executable netcoredbg which will be used for debugging.
+   --     -- by default, this is the "netcoredbg" executable on your PATH.
+   --     path = "netcoredbg"
+   --   }
+   -- }
   '';
 }

@@ -68,9 +68,17 @@
     };
     dap = {
       enable = pkgs.lib.mkDefault true;
+      adapters.executables.coreclr = {
+        command = "netcoredbg";
+        args = ["--interpreter=vscode"];
+      };
       settings = {};
     };
     dap-ui = {
+      enable = pkgs.lib.mkDefault true;
+      settings = {};
+    };
+    dap-virtual-text = {
       enable = pkgs.lib.mkDefault true;
       settings = {};
     };
