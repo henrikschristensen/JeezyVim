@@ -210,7 +210,7 @@
 
     # nvim-dap
     {
-      action = "<cmd>lua require'dap'.continue()<CR>";
+      action = "<cmd>lua require'dap.ext.vscode'.load_launchjs()<CR>lua require'dap'.continue()<CR>";
       key = "<F5>";
       mode = "n";
       options = {
@@ -293,7 +293,7 @@
     }
     {
       action = "<cmd>lua require'dapui'.close()<CR>";
-      key = "<F5>";
+      key = "<F4>";
       mode = "n";
       options = {
         noremap = true;
