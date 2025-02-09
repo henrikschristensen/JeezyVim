@@ -210,19 +210,6 @@
 
     # nvim-dap
     {
-      action = ''
-        <cmd>lua require'dap.ext.vscode'.load_launchjs()<CR>;
-        <cmd>lua require'dap'.continue()<CR>;
-      '';
-      key = "<F5>";
-      mode = "n";
-      options = {
-        noremap = true;
-        silent = true;
-        desc = "DAP Continue";
-      };
-    }
-    {
       action = "<cmd>lua require'dap'.step_over()<CR>";
       key = "<F10>";
       mode = "n";
@@ -272,8 +259,6 @@
         desc = "DAP REPL Open";
       };
     }
-
-    # dap-ui
     {
       action = "<cmd>lua require'dapui'.toggle()<CR>";
       key = "<F7>";
@@ -295,6 +280,16 @@
       };
     }
     {
+      action = "<cmd>lua require'dap'.continue()<CR>";
+      key = "<F5>";
+      mode = "n";
+      options = {
+        noremap = true;
+        silent = true;
+        desc = "DAP Continue";
+      };
+    }
+    {
       action = "<cmd>lua require'dapui'.close()<CR>";
       key = "<F4>";
       mode = "n";
@@ -312,6 +307,16 @@
         noremap = true;
         silent = true;
         desc = "DAP UI Evaluate";
+      };
+    }
+    {
+      action = "<cmd>lua require'dap.ext.vscode'.load_launchjs()<CR>";
+      key = "<F1>";
+      mode = "n";
+      options = {
+        noremap = true;
+        silent = true;
+        desc = "DAP Load launch.json";
       };
     }
 

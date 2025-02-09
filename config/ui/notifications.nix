@@ -3,7 +3,7 @@
     enable = pkgs.lib.mkDefault true;
     settings = {
       level = "info";
-      backgroundColour = "#191724";
+      background_colour = "#191724";
     };
   };
 }
