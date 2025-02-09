@@ -301,6 +301,16 @@
         desc = "DAP UI Close";
       };
     }
+    {
+      action = "<cmd>lua require'dapui'.eval(nil, { enter = true })<CR>";
+      key = "<F3>";
+      mode = "n";
+      options = {
+        noremap = true;
+        silent = true;
+        desc = "DAP UI Evaluate";
+      };
+    }
 
     # neotest
     {
