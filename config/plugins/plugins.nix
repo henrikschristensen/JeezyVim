@@ -87,7 +87,18 @@
       adapters = {
         dotnet = {
           enable = pkgs.lib.mkDefault true;
-          settings = {};
+          settings = {
+            args = {
+              justMyCode = false;
+            };
+            dotnet_additional_args = [
+              "--verbosity detailed"
+            ];
+            dap = {
+              adapter_name = "coreclr";
+            };
+            discovery_root = "solution";
+          };
         };
         go = {
           enable = pkgs.lib.mkDefault true;
