@@ -55,17 +55,6 @@
       settings.surround_enabled = pkgs.lib.mkDefault 1;
     };
     web-devicons.enable = true;
-    copilot-vim = {
-      enable = pkgs.lib.mkDefault true;
-    };
-    copilot-chat = {
-      enable = pkgs.lib.mkDefault true;
-      settings = {
-        window = {
-          layout = "float";
-        };
-      };
-    };
     dap = {
       enable = pkgs.lib.mkDefault true;
       adapters.executables.coreclr = {
