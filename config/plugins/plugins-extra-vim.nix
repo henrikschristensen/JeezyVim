@@ -83,7 +83,9 @@ in {
           github = {
             api_key = os.getenv "GITHUB_TOKEN",
           },
-        }
+        },
+        state_dir = vim.fn.expand('$HOME/parrot/persisted'),
+        state_dir =vim.fn.expand('$HOME/parrot/chats')
       }
 
     -- require("dap-cs").setup {
