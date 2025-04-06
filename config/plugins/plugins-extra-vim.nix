@@ -20,7 +20,7 @@ in {
     lspkind-nvim
     zen-mode-nvim
     twilight-nvim
-    parrot-nvim
+    # parrot-nvim
     roslyn-nvim
     vim-just
     {
@@ -87,18 +87,18 @@ in {
         }
       }
 
-      require("parrot").setup {
-        providers = {
-          mistral = {
-            api_key = os.getenv "MISTRAL_API_KEY",
-          },
-          github = {
-            api_key = os.getenv "GITHUB_TOKEN",
-          },
-        },
-        state_dir = vim.fn.expand('$HOME/parrot/persisted'),
-        state_dir =vim.fn.expand('$HOME/parrot/chats')
-      }
+      -- require("parrot").setup {
+      --   providers = {
+      --     mistral = {
+      --       api_key = os.getenv "MISTRAL_API_KEY",
+      --     },
+      --     github = {
+      --       api_key = os.getenv "GITHUB_TOKEN",
+      --     },
+      --   },
+      --   state_dir = vim.fn.expand('$HOME/parrot/persisted'),
+      --   state_dir =vim.fn.expand('$HOME/parrot/chats')
+      -- }
 
     -- require("dap-cs").setup {
     --   -- Additional dap configurations can be added.
