@@ -1,14 +1,14 @@
 {pkgs, ...}: {
   plugins = {
     luasnip = {
-      enable = pkgs.lib.mkDefault true;
+      enable = pkgs.lib.mkDefault false;
       settings = {
         enable_autosnippets = pkgs.lib.mkDefault true;
       };
     };
 
     cmp = {
-      enable = pkgs.lib.mkDefault true;
+      enable = pkgs.lib.mkDefault false;
       autoEnableSources = pkgs.lib.mkDefault true;
       settings = {
         snippet.expand = "function(args) require('luasnip').lsp_expand(args.body) end";
