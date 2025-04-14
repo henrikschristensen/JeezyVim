@@ -130,6 +130,19 @@
       enable = pkgs.lib.mkDefault true;
       setupLspCapabilities = pkgs.lib.mkDefault true;
       settings = {
+        completion = {
+          accept = {
+            auto_brackets = {
+              enabled = true;
+              semantic_token_resolution = {
+                enabled = false;
+              };
+            };
+          };
+          documentation = {
+            auto_show = false;
+          };
+        };
         keymap = {
           preset = "enter";
         };
