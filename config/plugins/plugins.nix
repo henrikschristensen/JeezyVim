@@ -144,10 +144,10 @@
           };
         };
         keymap = {
-          preset = "enter";
+            preset = "default";
         };
         sources = {
-          default = ["lsp" "path" "snippets" "buffer" "git" "ripgrep" "emoji" "spell"];
+          default = ["lsp" "path" "snippets" "buffer"];
           providers = {
             spell = {
               module = "blink-cmp-spell";
