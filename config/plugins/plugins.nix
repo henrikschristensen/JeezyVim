@@ -144,7 +144,7 @@
           };
         };
         keymap = {
-            preset = "default";
+          preset = "super-tab";
         };
         sources = {
           default = ["lsp" "path" "snippets" "buffer"];

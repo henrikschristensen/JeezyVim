@@ -19,7 +19,6 @@
         dotenv_linter.enable = pkgs.lib.mkDefault true;
         deadnix.enable = pkgs.lib.mkDefault true;
         trail_space.enable = pkgs.lib.mkDefault true;
-        yamllint.enable = pkgs.lib.mkDefault true;
       };
 
       formatting = {
