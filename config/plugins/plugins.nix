@@ -98,6 +98,9 @@
         summary.enable = pkgs.lib.mkDefault true;
       };
     };
+    jdtls = {
+      enable = pkgs.lib.mkDefault true;
+    };
     avante = {
       enable = pkgs.lib.mkDefault true;
       settings = {
