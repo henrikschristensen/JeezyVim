@@ -6,6 +6,8 @@
       # runtime dependencies
       fd
       ripgrep
+      # language servers
+      roslyn-ls
     ]
     ++ pkgs.lib.optionals pkgs.stdenv.isDarwin [
       # runtime dependencies
