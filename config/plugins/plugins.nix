@@ -71,6 +71,10 @@
       enable = pkgs.lib.mkDefault true;
       settings = {};
     };
+    dap-go = {
+      enable = pkgs.lib.mkDefault true;
+      settings = {};
+    };
     neotest = {
       enable = pkgs.lib.mkDefault true;
       adapters = {
