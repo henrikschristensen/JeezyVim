@@ -8,13 +8,14 @@
     };
 
     cmp = {
-      enable = pkgs.lib.mkDefault false;
+      enable = pkgs.lib.mkDefault true;
       autoEnableSources = pkgs.lib.mkDefault true;
       settings = {
         snippet.expand = "function(args) require('luasnip').lsp_expand(args.body) end";
 
         sources = [
           {name = "nvim_lsp";}
+          {name = "nvim_lsp_signature_help";}
           {name = "luasnip";}
           {name = "path";}
           {name = "buffer";}
